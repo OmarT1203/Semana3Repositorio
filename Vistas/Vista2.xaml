@@ -5,16 +5,20 @@
              Title="Vista2">
     <VerticalStackLayout>
         <Label 
-            Text="Vista 2"
-            FontSize="18"
-            VerticalOptions="Center"
-            HorizontalOptions="Center" />
+        Style="{StaticResource labelGlobal}"
+        Text="VISTA DOS"
+        FontSize="18"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center" />
         <!--objeto que recibe el dato-->
         <Label x:Name="lbldato1"
-               TextColor="Red"/>
+           Style="{StaticResource labelGlobal}"
+           />
         <Label x:Name="lbldato2"
-               TextColor="Red"/>
-        
+           Style="{StaticResource labelGlobal}"
+     TextColor="Red"/>
+
+
 
     </VerticalStackLayout>
 </ContentPage>

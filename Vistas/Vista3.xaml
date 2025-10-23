@@ -3,24 +3,33 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="otacoss3.Vistas.Vista3"
              Title="Vista3">
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="FontSize" Value="25"/>
+            <Setter Property="TextColor" Value="Blue"/>
+        </Style>
+
+        <Style TargetType="Entry">
+            <Setter Property="BackgroundColor" Value="Aqua"/>
+        </Style>
+    </ContentPage.Resources>
+
+
     <VerticalStackLayout>
         <Label 
-            Text="Vista 3 Guardar Usuario"
+            Text="Vista 3: Guardar Usuario"
             VerticalOptions="Center" 
             FontSize="20"
             HorizontalOptions="Center" />
-
         <Entry x:Name="txtUsuario"
-       Placeholder="Ingrese el usuario"/>
-        
-        <Entry x:Name="txtContrasena"
-       Placeholder="Ingrese la contraseña"/>
+        Placeholder="Ingresa el usuario"/>
+
+        <Entry x:Name="txtContrasena"       
+        Placeholder="Ingresa la contraseña"/>
 
         <Button x:Name="btnSalir"
                 Text="Guardar"
                 Clicked="btnSalir_Clicked"/>
 
-        
-        
     </VerticalStackLayout>
 </ContentPage>
